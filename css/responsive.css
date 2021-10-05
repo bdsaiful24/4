@@ -1,0 +1,242 @@
+@media all and (max-width:1300px) {
+    .container{
+        width: 1200px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+@media all and (max-width:1200px) {
+    .main-menu ul{
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .main-menu{
+        position: relative;
+        flex-basis: 100%;
+    }
+    .mobile-menu-check{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        top: -39px;
+        right: 0;
+        display: block;
+    }
+    .mobile-menu-icon {
+        cursor: pointer;
+        pointer-events: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: -39px;
+        right: 0;
+        font-size: 30px;
+        display: block;
+    }
+    .mobile-menu-check:checked ~ ul{
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        width: auto;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: var(--white);
+        width: 100%;
+        flex-direction: column;
+    }
+    .main-menu ul li ul {
+        left: 116px;
+    }
+    .bottom-header{
+        position: relative;
+    }
+    .right-menu-click,.right-menu-btn{
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        height: 40px;
+        width: 40px;
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+    }
+    .right-menu-click{
+        opacity: 0;
+    }
+    .right-menu-btn{
+        pointer-events: none;
+    }
+    .right-menu-click:checked ~ .right-header{
+        opacity: 1;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        background: var(--white);
+    }
+    .right-header{
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .partner-item img {
+        width: 100px;
+    }
+}
+@media all and (max-width:992px) {
+    .container{
+        width: 878px;
+        max-width: 100%;
+    }
+    .banner {
+        height: 64vh;
+    }
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    .section-heading {
+        width: 76%;
+        padding: 1rem 0;
+    }
+    .product-item {
+        flex-basis: 48%;
+    }
+    .water-detox-section {
+        height: 135vh;
+    }
+    .department-shop {
+        padding: 1rem 0;
+    }
+    .d-shop-item {
+        flex-basis: 48%;
+    }
+    .why-chose-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 88%;
+    }
+    .why-chose-content h2 {
+        font-size: 2rem;
+    }
+    .why-chose-inner-content h3 {
+        font-size: 1.2rem;
+    }
+    .testimonial-section {
+        height: 110vh;
+        padding: 2rem 0;
+    }
+    .testimonial-heading {
+        width: 76%;
+    }
+    .testimonial-heading h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .testimonial-content {
+        padding: 1rem;
+        width: 75%;
+    }
+    .offer-inner h2 {
+        font-size: 2rem;
+    }
+    .most-view-section {
+        padding: 1rem 0;
+    }
+    .most-view-section .section-heading h2 {
+        font-size: 2rem;
+    }
+    .blog-section {
+        padding: 1rem 0;
+    }
+    .blogs {
+        flex-direction: column;
+    }
+    .newslatter-content {
+        flex-direction: column;
+    }
+    .newslatter-inner {
+        text-align: center;
+        padding: 20px;
+    }
+    form {
+        flex-direction: column;
+    }
+    .input-form {
+        margin-bottom: 10px;
+    }
+    .footer-section {
+        padding: 2rem 0;
+    }
+    .footer-inner {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width:768px) {
+    .top-header {
+        flex-direction: column;
+    }
+    .banner-content {
+        width: 70%;
+    }
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    .top-product-section {
+        padding: 1rem 0;
+    }
+    .product {
+        flex-direction: column;
+    }
+    .water-detox-section {
+        height: 100vh;
+    }
+    .left-top,.right-top,.right-bottom,.left-bottom{
+        display: none;
+    }
+    .water-detox-section .section-heading {
+        padding-top: 30px;
+    }
+    .section-heading {
+        width: 100%;
+    }
+    .department-shop-content {
+        flex-direction: column;
+    }
+    .why-chose-content {
+        padding: 1rem;
+    }
+    .why-chose-content p {
+        font-size: .8rem;
+    }
+    .testimonial-content {
+        width: 80%;
+    }
+    .testimonial-content p {
+        line-height: 1.3rem;
+        font-size: .9rem;
+    }
+    .offer-section {
+        padding: 37px 0;
+    }
+    .offer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .offer-inner {
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
